@@ -4,10 +4,10 @@
       <div class="col-md-12">
         <h1>Products</h1>
         <div class="row">
-          <div v-for="produk in products" :key="produk.id" class="col-md-4">
+          <div class="col-md-4" v-for="produk in products" :key="produk.id">
             <div class="card mb-4">
               <div class="card-header">
-                <img :src="produk.foto" alt="">
+                <img :src="produk.foto" width="100%" class="img-thumb" />
               </div>
               <div class="card-body">
                 <h4>{{produk.nama}}</h4>
