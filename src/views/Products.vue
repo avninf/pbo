@@ -37,11 +37,12 @@ export default {
   },
   methods: {
     async getProducts() {
-      let {data, error} = await this.$supabase.from("tb_produk").select(); 
-      if(data) this.products = data
-      if(error) console.error(error)
+      let {data, error} = await this.$supabas.from("tb_produk").select().order('stok', {ascending: false});
+      if(data) this.products = data;
+      if(error) console.error(error);
     },
   },
 };
 </script>
+
 <style lang="scss" scoped></style>
