@@ -13,8 +13,8 @@
                 <h4>{{produk.nama}}</h4>
                 <h4>{{produk.harga}}</h4>
                 <!--tombol pesan-->
-                <a  v-if="produk.stok > 0" :href="produk.link_eksternal" target="_blank" class="btn btn-succes btn-block">beli</a>
-                <a v_else href="#" class="disables btn btn-dark btn-block">Dah habiss</a>
+                <a  v-if="produk.stok > 0" :href="produk.link_eksternal" target="_blank" class="btn btn-danger btn-block">beli</a>
+                <a v-else href="#" class="disables btn btn-dark btn-block">Dah habiss</a>
               </div>
             </div>
           </div>
