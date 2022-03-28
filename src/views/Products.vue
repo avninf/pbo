@@ -28,8 +28,7 @@
 export default {
   data() {
     return {
-      products: '',
-      loading : true,
+      products: "",
     };
   },
   mounted() {
